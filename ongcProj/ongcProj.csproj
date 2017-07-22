@@ -1,0 +1,382 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{20FD22D5-506B-4365-AF9D-1633EAF55EE2}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ongcProj</RootNamespace>
+    <AssemblyName>ongcProj</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="authentication.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="authentication.Designer.cs">
+      <DependentUpon>authentication.cs</DependentUpon>
+    </Compile>
+    <Compile Include="basinDelete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="basinDelete.Designer.cs">
+      <DependentUpon>basinDelete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="basinInsert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="basinInsert.Designer.cs">
+      <DependentUpon>basinInsert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="basinUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="basinUpdate.Designer.cs">
+      <DependentUpon>basinUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fieldDelete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fieldDelete.Designer.cs">
+      <DependentUpon>fieldDelete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fieldinsert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fieldinsert.Designer.cs">
+      <DependentUpon>Fieldinsert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FieldUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FieldUpdate.Designer.cs">
+      <DependentUpon>FieldUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="home.Designer.cs">
+      <DependentUpon>home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="index.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="index.Designer.cs">
+      <DependentUpon>index.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ongcProjectdBDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ongcProjectdBDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ongcProjectdBDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ongcProjectdBDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ongcProjectdBDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ongcProjectdBDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Operations.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Operations.Designer.cs">
+      <DependentUpon>Operations.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="reservoirDelete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reservoirDelete.Designer.cs">
+      <DependentUpon>reservoirDelete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="reservoirInsertP1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reservoirInsertP1.Designer.cs">
+      <DependentUpon>reservoirInsertP1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="reservoirInsertP2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reservoirInsertP2.Designer.cs">
+      <DependentUpon>reservoirInsertP2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="reservoirInsertP3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reservoirInsertP3.Designer.cs">
+      <DependentUpon>reservoirInsertP3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="reservoirUpdateP1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reservoirUpdateP1.Designer.cs">
+      <DependentUpon>reservoirUpdateP1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="reservoirUpdateP2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reservoirUpdateP2.Designer.cs">
+      <DependentUpon>reservoirUpdateP2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="confirmation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="confirmation.Designer.cs">
+      <DependentUpon>confirmation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="reservoirUpdateP3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reservoirUpdateP3.Designer.cs">
+      <DependentUpon>reservoirUpdateP3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="subbasinDelete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="subbasinDelete.Designer.cs">
+      <DependentUpon>subbasinDelete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="subbasinInsert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="subbasinInsert.Designer.cs">
+      <DependentUpon>subbasinInsert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubbasinUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubbasinUpdate.Designer.cs">
+      <DependentUpon>SubbasinUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view.Designer.cs">
+      <DependentUpon>view.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view1.Designer.cs">
+      <DependentUpon>view1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view2.Designer.cs">
+      <DependentUpon>view2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view3.Designer.cs">
+      <DependentUpon>view3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="welcome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="welcome.Designer.cs">
+      <DependentUpon>welcome.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="authentication.resx">
+      <DependentUpon>authentication.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="basinDelete.resx">
+      <DependentUpon>basinDelete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="basinInsert.resx">
+      <DependentUpon>basinInsert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fieldDelete.resx">
+      <DependentUpon>fieldDelete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fieldinsert.resx">
+      <DependentUpon>Fieldinsert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FieldUpdate.resx">
+      <DependentUpon>FieldUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="home.resx">
+      <DependentUpon>home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="index.resx">
+      <DependentUpon>index.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Operations.resx">
+      <DependentUpon>Operations.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="reservoirDelete.resx">
+      <DependentUpon>reservoirDelete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reservoirInsertP1.resx">
+      <DependentUpon>reservoirInsertP1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reservoirInsertP2.resx">
+      <DependentUpon>reservoirInsertP2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reservoirInsertP3.resx">
+      <DependentUpon>reservoirInsertP3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reservoirUpdateP1.resx">
+      <DependentUpon>reservoirUpdateP1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reservoirUpdateP2.resx">
+      <DependentUpon>reservoirUpdateP2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="confirmation.resx">
+      <DependentUpon>confirmation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reservoirUpdateP3.resx">
+      <DependentUpon>reservoirUpdateP3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="subbasinDelete.resx">
+      <DependentUpon>subbasinDelete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="subbasinInsert.resx">
+      <DependentUpon>subbasinInsert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubbasinUpdate.resx">
+      <DependentUpon>SubbasinUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view.resx">
+      <DependentUpon>view.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view1.resx">
+      <DependentUpon>view1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view2.resx">
+      <DependentUpon>view2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view3.resx">
+      <DependentUpon>view3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="welcome.resx">
+      <DependentUpon>welcome.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="ongcProjectdBDataSet.xsc">
+      <DependentUpon>ongcProjectdBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ongcProjectdBDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ongcProjectdBDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ongcProjectdBDataSet.xss">
+      <DependentUpon>ongcProjectdBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ongcProjectdBDataSet1.xsc">
+      <DependentUpon>ongcProjectdBDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="ongcProjectdBDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ongcProjectdBDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ongcProjectdBDataSet1.xss">
+      <DependentUpon>ongcProjectdBDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="ongcProjectdBDataSet2.xsc">
+      <DependentUpon>ongcProjectdBDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="ongcProjectdBDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ongcProjectdBDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ongcProjectdBDataSet2.xss">
+      <DependentUpon>ongcProjectdBDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ONGC_logo_big.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\epinet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ongc1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue22.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
